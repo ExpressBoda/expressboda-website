@@ -1,0 +1,24 @@
+---
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'de' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'ru' } },
+    { params: { lang: 'uk' } },
+  ];
+}
+
+const { lang } = Astro.params;
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <title>ExpressBoda — Marriage in Denmark</title>
+  </head>
+  <body>
+    <h1>ExpressBoda Website</h1>
+    <p>Current language: {lang.toUpperCase()}</p>
+  </body>
+</html>
