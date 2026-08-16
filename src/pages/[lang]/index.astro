@@ -15,10 +15,17 @@ const { lang } = Astro.params;
 <html lang={lang}>
   <head>
     <meta charset="utf-8" />
-    <title>ExpressBoda — Marriage in Denmark</title>
+    <title>ExpressBoda — Marriage in Denmark ({lang.toUpperCase()})</title>
   </head>
   <body>
     <h1>ExpressBoda Website</h1>
-    <p>Current language: {lang.toUpperCase()}</p>
+    <p>Current language: <strong>{lang.toUpperCase()}</strong></p>
+    <ul>
+      <li><a href="/en/">English</a></li>
+      <li><a href="/de/">Deutsch</a></li>
+      <li><a href="/es/">Español</a></li>
+      <li><a href="/ru/">Русский</a></li>
+      <li><a href="/uk/">Українська</a></li>
+    </ul>
   </body>
 </html>
