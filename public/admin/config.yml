@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ExpressBoda/expressboda-website
   branch: main
-  base_url: https://decapv2.vercel.app
+  base_url: https://expressboda-website-six.vercel.app
   auth_endpoint: /api/auth
 
 media_folder: "public/uploads"
